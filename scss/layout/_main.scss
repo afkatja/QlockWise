@@ -4,3 +4,23 @@
 
 .l-main {
 }
+
+@include sticky-footer(50px, '.wrap', '', 'footer');
+
+.wrap {
+  width: 960px; margin: 0 auto; padding: 20px;
+}
+
+.hbox {
+  display: flex; flex-flow: row wrap;
+}
+
+.vbox {
+  display: flex; flex-flow: column wrap;
+}
+
+.flex-item {
+  flex: 1;
+  &.btn, &.flex-none { flex: none; }
+  & + & { margin-left: 20px; }
+}

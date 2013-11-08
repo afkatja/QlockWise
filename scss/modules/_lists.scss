@@ -1,0 +1,22 @@
+.list-plain {
+  list-style: none; padding: 0;
+}
+
+.list-numbered {
+  counter-reset: list;
+  & > li {
+    padding-left: 60px;
+    position: relative;
+    line-height: 40px;
+    &:before {
+      counter-increment: list;
+      content: counter(list);
+      display: inline-block;
+      text-indent: -40px;
+      padding-top: inherit;
+      font-family: $novecento-book;
+      font-size: 32px;
+      color: #fff;
+    }
+  }
+}

@@ -116,9 +116,30 @@ $prefixes: ("-webkit-","-moz-", "");
 	}
 }
 
+@mixin center-v($height) {
+  position: absolute; top: 50%; margin-top: -($height/2);
+}
+
+@mixin center-h($width) {
+  position: absolute; left: 50%; margin-left: -($width/2);
+}
+
 // ----------------------------------------------------------
 // == CSS3
 // ----------------------------------------------------------
+@mixin vendor($property, $value...){
+    -webkit-#{$property}:$value;
+       -moz-#{$property}:$value;
+        -ms-#{$property}:$value;
+            #{$property}:$value;
+}
+
+@mixin vendor-value($property, $value){
+  #{$property}:-webkit-#{$value};
+     #{$property}:-moz-#{$value};
+      #{$property}:-ms-#{$value};
+          #{$property}:#{$value};
+}
 
 // = Prefixer
 // -----------------------------
@@ -227,4 +248,90 @@ $prefix-for-spec:      true !default;
     li {
         @include inline-block();
     }
+}
+
+// keyframes
+@mixin keyframe ($animation-name){
+    @-webkit-keyframes $animation-name{
+        @content;
+    }
+
+    @-moz-keyframes $animation-name{
+        @content;
+    }
+
+    @-ms-keyframes $animation-name{
+        @content;
+    }
+
+    @-o-keyframes $animation-name{
+        @content;
+    }
+
+    @keyframes $animation-name{
+        @content;
+    }
+}
+
+//gradients
+@mixin vertical-gradient($fromColor, $toColor, $fromPosition: 0, $toPosition: 100%){
+  background-color: $fromColor; /*Old browsers*/
+  background: -moz-linear-gradient(top, $fromColor $fromPosition $toColor $toPosition); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop($fromPosition, $fromColor), color-stop($toPosition, $toColor)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $fromColor $fromPosition, $toColor $toPosition); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $fromColor $fromPosition, $toColor $toPosition); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $fromColor $fromPosition, $toColor $toPosition); /* IE10+ */
+  background: linear-gradient(to bottom, $fromColor $fromPosition, $toColor $toPosition); /* W3C */
+}
+
+@mixin horizontal-gradient($fromColor, $toColor, $fromPosition: 0, $toPosition: 100%){
+  background-color: $toColor; /*Old browsers*/
+  background: -moz-linear-gradient(left, $fromColor $fromPosition, $toColor $toPosition); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop($fromPosition, $fromColor), color-stop($toPosition, $toColor)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, $fromColor $fromPosition, $toColor $toPosition); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, $fromColor $fromPosition, $toColor $toPosition); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, $fromColor $fromPosition, $toColor $toPosition); /* IE10+ */
+  background: linear-gradient(to right, $fromColor $fromPosition, $toColor $toPosition); /* W3C */
+}
+
+@mixin radial-gradient($fromColor, $toColor, $fromPosition: 0, $toPosition: 100%, $start: center center){ //'center center' instead of '50% 50%' -> IE8
+    background: #f0f9ff; /* Old browsers */
+    background: -moz-radial-gradient($start, ellipse cover, $fromColor $fromPosition, $toColor $toPosition); /* FF3.6+ */
+    background: -webkit-gradient(radial, $start $start, 0px, $start $start, 100%, color-stop($fromPosition, $fromColor), color-stop($toPosition, $toColor)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient($start, ellipse cover, $fromColor $fromPosition, $toColor $toPosition); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient($start, ellipse cover, $fromColor $fromPosition, $toColor $toPosition); /* Opera 12+ */
+    background: -ms-radial-gradient($start, ellipse cover, $fromColor $fromPosition, $toColor $toPosition); /* IE10+ */
+    background: radial-gradient(ellipse at $start, $fromColor $fromPosition, $toColor $toPosition); /* W3C */
+    //filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#{$fromColor}, EndColorStr=#{$toColor}, GradientType=0); /*old IE's - vertical*/
+}
+
+@mixin diagonal-gradient($deg, $fromColor, $toColor, $middleColor: transparent, $fromPosition: 0, $toPosition: 100%){ 
+  background: $toColor; /* Old browsers */
+  background: -moz-linear-gradient($deg,  $fromColor $fromPosition, $middleColor 50%, $toColor $toPosition); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop($fromPosition, $fromColor), color-stop($middleColor 50%), color-stop($toPosition, $toColor)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient($deg, $fromColor $fromPosition, $middleColor 50%, $toColor $toPosition); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient($deg, $fromColor $fromPosition, $middleColor 50%, $toColor $toPosition); /* Opera 11.10+ */
+  background: -ms-linear-gradient($deg, $fromColor $fromPosition, $middleColor 50%, $toColor $toPosition); /* IE10+ */
+  background: linear-gradient($deg, $fromColor $fromPosition, $middleColor 50%, $toColor $toPosition); /* W3C */
+}
+
+//sticky footer
+@mixin sticky-footer($footer-height, $root-selector: unquote("#root"), $root-footer-selector: unquote("#root_footer"), $footer-selector: unquote("#footer")) {
+  html, body { height: 100%; width: 100%; }
+  #wrap, #page-wrap { height: 100%; }
+  #{$root-selector} {
+    clear: both;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    padding-bottom: $footer-height;
+    margin-bottom: -$footer-height;
+    @if ($root-footer-selector != "") {
+      #{$root-footer-selector} { height: $footer-height; } }
+    }
+  #{$footer-selector} {
+    clear: both;
+    position: relative;
+    //min-height: $footer-height;
+  }
 }

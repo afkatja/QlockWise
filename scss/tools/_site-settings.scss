@@ -34,7 +34,7 @@ $color-link-hover: darken($color1, 10%);
 $color-mixin-placeholder: #cdcdcd;
 
 // Selection
-$color-selection: $color1;
+$color-selection: #ccc;
 
 // Btn
 $bg-btn: #555;
@@ -47,3 +47,5 @@ $clr-btn-hover: darken($clr-btn, 10%);
 
 // Max width wrapper
 $wrapper-width: pxtoem(1140, 16);
+
+$responsive: true;

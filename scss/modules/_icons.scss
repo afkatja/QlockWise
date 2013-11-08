@@ -22,6 +22,7 @@ $sprites2x: sprite-map("icons-2x/*.png");
 }
 
 @mixin sprite-background($name) {
+  background-image: sprite-url($sprites);
   background-position: sprite-position($sprites, $name);
   height: image-height(sprite-file($sprites, $name));
   width: image-width(sprite-file($sprites, $name));
@@ -56,6 +57,10 @@ $sprites2x: sprite-map("icons-2x/*.png");
 }
 .icon-search {
   @include sprite-background(search);
+}
+
+.select-wrapper:after {
+  @include sprite-background(select-dropdown);
 }
 
 

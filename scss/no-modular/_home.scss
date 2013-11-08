@@ -4,3 +4,23 @@
 
 #home {
 } /* #home */
+
+.wrap {
+  position: relative;
+  background-color: rgba(189,127,86,1);
+  @include vendor-value(background-image,   
+    linear-gradient(left,
+    rgba(253, 215, 174, 0.8),
+    rgba(255, 255, 255, 0) 1px,
+    transparent 89px,
+    rgba(0, 0, 0, 0.5) 90px));
+  
+  background-size:
+    90px 100%,
+    85px 100%,
+    65px 100%;
+}
+
+.tasks {
+  font-size: 30px;
+}

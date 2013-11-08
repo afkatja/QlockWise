@@ -24,3 +24,24 @@ textarea {
         border-color: #999;
     }
 }
+
+.select-wrapper {
+  display: block; // Override
+  position: relative;
+  height: 36px; 
+  overflow: hidden;
+  padding-right: 20px;
+  background-color: #fff;
+  @include vendor(border-radius, 6px);
+  &:after { content: '';
+    background-color: #fff; width: 10px; @include center-v(7px); right: 10px;
+    pointer-events: none; //to make underlying select box drop down on click on the arrow
+  }
+}
+select {
+  width: 125%;
+  height: 100%; // Override
+  padding: 0 10px; // Override; right padding necessary for text-overflow
+  -webkit-appearance: textfield;
+  &:focus { outline: none; }
+}

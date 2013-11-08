@@ -68,16 +68,7 @@
 
 /* =Rotate
 -------------------------------------------------------------- */
-
-@-moz-keyframes rotate {
-	0% { -moz-transform:rotate(0deg); }
-	100% { -moz-transform:rotate(360deg); }
-}
-@-webkit-keyframes rotate {
-	0% { -webkit-transform:rotate(0deg); }
-	100% { -webkit-transform:rotate(360deg); }
-}
-@keyframes rotate {
-	0% { transform:rotate(0deg); }
-	100% { transform:rotate(360deg); }
+@include keyframe(rotate) {
+  0% { @include vendor(transform, rotate(0deg)); }
+  100% { @include vendor(transform, rotate(360deg)); }
 }

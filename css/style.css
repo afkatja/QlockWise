@@ -115,7 +115,7 @@
   list-style: none;
   margin: 0;
   padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_mixins\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_mixins\.scss}line{font-family:\00003248}}
   .ul-list-inline li {
     display: inline-block;
     vertical-align: middle; }
@@ -544,7 +544,14 @@ table {
 /* ===========================
    Base
    =========================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\000035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\000037}}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\0000312}}
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -554,7 +561,7 @@ body {
   -webkit-animation: fadeInDown 1s;
   animation: fadeInDown 1s; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\0000320}}
 a {
   color: #df2e30;
   text-decoration: none;
@@ -563,23 +570,23 @@ a {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\0000325}}
   a:hover {
     color: #bd1d1f; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\0000330}}
 ::-moz-selection {
   background: #df2e30;
   color: #fff;
   text-shadow: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\0000335}}
 ::selection {
   background: #df2e30;
   color: #fff;
   text-shadow: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\0000341}}
 hr {
   display: block;
   height: 1px;
@@ -632,10 +639,47 @@ textarea {
   textarea:focus {
     border-color: #999; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_form\.scss}line{font-family:\0000328}}
+.select-wrapper {
+  display: block;
+  position: relative;
+  height: 36px;
+  overflow: hidden;
+  padding-right: 20px;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_form\.scss}line{font-family:\0000336}}
+  .select-wrapper:after {
+    content: '';
+    background-color: #fff;
+    width: 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -3.5px;
+    right: 10px;
+    pointer-events: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_form\.scss}line{font-family:\0000341}}
+select {
+  width: 125%;
+  height: 100%;
+  padding: 0 10px;
+  -webkit-appearance: textfield; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_form\.scss}line{font-family:\0000346}}
+  select:focus {
+    outline: none; }
+
 /* Fonts */
 /* ==|====================
    Fonts/Oswald
    ======================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_oswald\.scss}line{font-family:\000038}}
+.oswald {
+  font-family: "Oswald", sans-serif; }
+
 /* ==|=================
    Fonts/Novecento
    ====================*/
@@ -665,6 +709,13 @@ textarea {
 /* ==|====================
    Layout/Header
    ======================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_header\.scss}line{font-family:\000038}}
+header {
+  font-size: 4em;
+  text-align: center;
+  padding: 20px;
+  color: #fff; }
+
 /* ==|====================
    Layout/Footer
    ======================= */
@@ -756,6 +807,58 @@ textarea {
     float: inherit;
     margin-right: 0;
     width: 100% !important; } }
+/* ==|====================
+   Layout/Main
+   ======================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_mixins\.scss}line{font-family:\00003320}}
+html, body {
+  height: 100%;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_mixins\.scss}line{font-family:\00003321}}
+#wrap, #page-wrap {
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_mixins\.scss}line{font-family:\00003322}}
+.wrap {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  padding-bottom: 50px;
+  margin-bottom: -50px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_mixins\.scss}line{font-family:\00003332}}
+footer {
+  clear: both;
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000310}}
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000314}}
+.hbox {
+  display: flex;
+  flex-flow: row wrap; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000318}}
+.vbox {
+  display: flex;
+  flex-flow: column wrap; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000322}}
+.flex-item {
+  flex: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000324}}
+  .flex-item.btn, .flex-item.btn-color1, .flex-item.btn-color2, .flex-item.flex-none {
+    flex: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000325}}
+  .flex-item + .flex-item {
+    margin-left: 20px; }
+
 /* Modules */
 /* ==|====================
    Module/Button
@@ -769,8 +872,8 @@ textarea {
   background-image: -moz-linear-gradient(#f9f9f9, #e9e9e9);
   background-image: -o-linear-gradient(#f9f9f9, #e9e9e9);
   background-image: linear-gradient(#f9f9f9, #e9e9e9);
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
   display: inline-block;
   vertical-align: middle;
   padding: .2em .7em;
@@ -832,93 +935,112 @@ textarea {
 [class*=" icon-"] {
   background-repeat: no-repeat;
   display: inline-block;
-  background-image: url('/img/icons-sc7324686ea.png'); }
+  background-image: url('/img/icons-se5dc5058ba.png'); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000311}}
     [class^="icon-"],
     [class*=" icon-"] {
-      background-image: url('/img/icons-2x-sfdfa334cec.png');
+      background-image: url('/img/icons-2x-s4ce5f36b9f.png');
       background-size: 50px auto; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000337}}
 .icon-facebook {
+  background-image: url('/img/icons-se5dc5058ba.png');
   background-position: 0 -32px;
   height: 16px;
   width: 16px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000337}}
     .icon-facebook {
       background-position: 0 -137px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000340}}
 .icon-twitter {
+  background-image: url('/img/icons-se5dc5058ba.png');
   background-position: 0 -16px;
   height: 16px;
   width: 16px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000340}}
     .icon-twitter {
       background-position: 0 -121px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000343}}
 .icon-rss {
+  background-image: url('/img/icons-se5dc5058ba.png');
   background-position: 0 0;
   height: 16px;
   width: 16px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000343}}
     .icon-rss {
       background-position: 0 -50px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000346}}
 .icon-flag {
+  background-image: url('/img/icons-se5dc5058ba.png');
   background-position: 0 -137px;
   height: 16px;
   width: 14px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000346}}
     .icon-flag {
       background-position: 0 -90px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000349}}
 .icon-newsletter {
+  background-image: url('/img/icons-se5dc5058ba.png');
   background-position: 0 -98px;
   height: 11px;
   width: 15px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000349}}
     .icon-newsletter {
       background-position: 0 -79px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000352}}
 .icon-video {
+  background-image: url('/img/icons-se5dc5058ba.png');
   background-position: 0 -122px;
   height: 15px;
   width: 16px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000352}}
     .icon-video {
       background-position: 0 -106px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000355}}
 .icon-audio {
+  background-image: url('/img/icons-se5dc5058ba.png');
   background-position: 0 -109px;
   height: 13px;
   width: 16px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000355}}
     .icon-audio {
       background-position: 0 -66px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000358}}
 .icon-search {
+  background-image: url('/img/icons-se5dc5058ba.png');
   background-position: 0 -48px;
   height: 50px;
   width: 50px; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000358}}
     .icon-search {
       background-position: 0 0; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000362}}
+.select-wrapper:after {
+  background-image: url('/img/icons-se5dc5058ba.png');
+  background-position: 0 -153px;
+  height: 7px;
+  width: 13px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000362}}
+    .select-wrapper:after {
+      background-position: 0 -153px; } }
 
 /* ==|================
    Module/Keyframes
@@ -982,31 +1104,152 @@ textarea {
 
 /* =Rotate
 -------------------------------------------------------------- */
-@-moz-keyframes rotate {
-  /* line 73, ../scss/modules/_animations.scss */
-  0% {
-    -moz-transform: rotate(0deg); }
-
-  /* line 74, ../scss/modules/_animations.scss */
-  100% {
-    -moz-transform: rotate(360deg); } }
-
 @-webkit-keyframes rotate {
-  /* line 77, ../scss/modules/_animations.scss */
+  /* line 72, ../scss/modules/_animations.scss */
   0% {
-    -webkit-transform: rotate(0deg); }
-
-  /* line 78, ../scss/modules/_animations.scss */
-  100% {
-    -webkit-transform: rotate(360deg); } }
-
-@keyframes rotate {
-  /* line 81, ../scss/modules/_animations.scss */
-  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-  /* line 82, ../scss/modules/_animations.scss */
+  /* line 73, ../scss/modules/_animations.scss */
   100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
+@-moz-keyframes rotate {
+  /* line 72, ../scss/modules/_animations.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 73, ../scss/modules/_animations.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-ms-keyframes rotate {
+  /* line 72, ../scss/modules/_animations.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 73, ../scss/modules/_animations.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-o-keyframes rotate {
+  /* line 72, ../scss/modules/_animations.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 73, ../scss/modules/_animations.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes rotate {
+  /* line 72, ../scss/modules/_animations.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  /* line 73, ../scss/modules/_animations.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_lists\.scss}line{font-family:\000031}}
+.list-plain {
+  list-style: none;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_lists\.scss}line{font-family:\000035}}
+.list-numbered {
+  counter-reset: list; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_lists\.scss}line{font-family:\000037}}
+  .list-numbered > li {
+    padding-left: 60px;
+    position: relative;
+    line-height: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_lists\.scss}line{font-family:\0000311}}
+    .list-numbered > li:before {
+      counter-increment: list;
+      content: counter(list);
+      display: inline-block;
+      text-indent: -40px;
+      padding-top: inherit;
+      font-family: "novecento_book";
+      font-size: 32px;
+      color: #fff; }
+
 /* No-Modular */
+/* ==|======================
+   No Modular/Home
+   ========================= */
+/* #home */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\000038}}
+.wrap {
+  position: relative;
+  background-color: #bd7f56;
+  background-image: -webkit-linear-gradient(left, rgba(253, 215, 174, 0.8), rgba(255, 255, 255, 0) 1px, transparent 89px, rgba(0, 0, 0, 0.5) 90px);
+  background-image: -moz-linear-gradient(left, rgba(253, 215, 174, 0.8), rgba(255, 255, 255, 0) 1px, transparent 89px, rgba(0, 0, 0, 0.5) 90px);
+  background-image: -ms-linear-gradient(left, rgba(253, 215, 174, 0.8), rgba(255, 255, 255, 0) 1px, transparent 89px, rgba(0, 0, 0, 0.5) 90px);
+  background-image: linear-gradient(left, rgba(253, 215, 174, 0.8), rgba(255, 255, 255, 0) 1px, transparent 89px, rgba(0, 0, 0, 0.5) 90px);
+  background-size: 90px 100%, 85px 100%, 65px 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000324}}
+.tasks {
+  font-size: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000031}}
+.balls {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-end;
+  width: 45%;
+  min-height: 800px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000034}}
+.ball {
+  width: 80px;
+  height: 80px;
+  background: url(../img/ball.png);
+  background-size: contain;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  -ms-border-radius: 80px;
+  border-radius: 80px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000037}}
+  .ball:nth-child(8n) {
+    margin-left: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000312}}
+  .ball.rotating {
+    -webkit-animation: rotate 2s infinite linear;
+    -moz-animation: rotate 2s infinite linear;
+    -ms-animation: rotate 2s infinite linear;
+    animation: rotate 2s infinite linear; }
