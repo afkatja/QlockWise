@@ -45,7 +45,7 @@
         'blue': {src: 'blue.mp4'}
       },
       
-      timeUnit: 20 // in seconds
+      timeUnit: 10 // in seconds
     };
 
     // (internal) settings
@@ -68,7 +68,7 @@
 
       settings = $.extend({}, settings, defaultOptions, options);
       
-      //onPlayScreenEntered();
+      onPlayScreenEntered();
       
       setupTaskScreen();
       

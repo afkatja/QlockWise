@@ -121,38 +121,5 @@
   .touch {
     @include grid-setup("touch-");
   }
-  @include media-query(tabletp){
-    @include grid-setup("tabletp-");
-  } 
-  @include media-query(mobilel){
-    @include grid-setup("mobilel-");
-  }
-  @include media-query(mobilep){
-      @include grid-setup("mobilep-");
-  }
-  
-/**
- * Generates a lot of classes that we'll probably never use, so lets just add widths as needed.
- *
- */
-/*
-  @include media-query(tabletl){
-      @include grid-setup("tabletl-");
-  }
-*/
-
-/**
- * If you have set the additional `$responsive-extra` variable to ‘true’ in
- * `_vars.scss` then you now have access to the following class available to
- * accomodate much larger screen resolutions.
- */
-
-  @if $responsive-extra == true{
-
-    @include media-query(desk-wide){
-        @include grid-setup("deskwide-");
-    }
-
-  }
 
 } /* endif */

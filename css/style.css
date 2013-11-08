@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Oswald:300);
 /*
  * SMACSS + SCSS starter v2.0
@@ -702,6 +703,257 @@ select {
   select:focus {
     outline: none; }
 
+/*------------------------------------*\
+    $WIDTHS
+\*------------------------------------*/
+/**
+ * Sizes in human readable format. These are used in conjunction with other
+ * objects and abstractions found in inuit.css, most commonly the grid system
+ * and faux flexbox.
+ *
+ * We have a mixin to generate our widths and their breakpoint-specific
+ * variations.
+ */
+/**
+* Whole
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000318}}
+.one-whole {
+  width: 100%; }
+
+/**
+* Halves
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000324}}
+.one-half {
+  width: 50%; }
+
+/**
+* Thirds
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000330}}
+.one-third {
+  width: 33.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000331}}
+.two-thirds {
+  width: 66.666%; }
+
+/**
+* Quarters
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000337}}
+.one-quarter {
+  width: 25%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000339}}
+.three-quarters {
+  width: 75%; }
+
+/**
+* Fifths
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000345}}
+.one-fifth {
+  width: 20%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000346}}
+.two-fifths {
+  width: 40%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000347}}
+.three-fifths {
+  width: 60%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000348}}
+.four-fifths {
+  width: 80%; }
+
+/**
+* Sixths
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000354}}
+.one-sixth {
+  width: 16.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000358}}
+.five-sixths {
+  width: 83.333%; }
+
+/**
+* Eighths
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000364}}
+.one-eighth {
+  width: 12.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000366}}
+.three-eighths {
+  width: 37.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000368}}
+.five-eighths {
+  width: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000370}}
+.seven-eighths {
+  width: 87.5%; }
+
+/**
+* Tenths
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000376}}
+.one-tenth {
+  width: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000378}}
+.three-tenths {
+  width: 30%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000382}}
+.seven-tenths {
+  width: 70%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000384}}
+.nine-tenths {
+  width: 90%; }
+
+/**
+* Twelfths
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000390}}
+.one-twelfth {
+  width: 8.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000394}}
+.five-twelfths {
+  width: 41.666%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000396}}
+.seven-twelfths {
+  width: 58.333%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\00003100}}
+.eleven-twelfths {
+  width: 91.666%; }
+
+/**
+ * If you have set `$responsive` to ‘true’ in `_vars.scss` then you now have
+ * access to these classes. You can define at which breakpoint you’d like an
+ * element to be a certain size, e.g.:
+ *
+ * `<div class="g  one-quarter  lap-one-half  palm-one-whole"> ... </div>`
+ *
+ * This would create a `div` that, at ‘desktop’ sizes, takes up a quarter of the
+ * horizontal space, a half of that space at ‘tablet’ sizes, and goes full width
+ * at ‘mobile’ sizes.
+ *
+ * Demo: jsfiddle.net/inuitcss/WS4Ge
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\00003121}}
+.touch {
+  /**
+  * Whole
+  */
+  /**
+  * Halves
+  */
+  /**
+  * Thirds
+  */
+  /**
+  * Quarters
+  */
+  /**
+  * Fifths
+  */
+  /**
+  * Sixths
+  */
+  /**
+  * Eighths
+  */
+  /**
+  * Tenths
+  */
+  /**
+  * Twelfths
+  */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000318}}
+  .touch .touch-one-whole {
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000324}}
+  .touch .touch-one-half {
+    width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000330}}
+  .touch .touch-one-third {
+    width: 33.333%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000331}}
+  .touch .touch-two-thirds {
+    width: 66.666%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000337}}
+  .touch .touch-one-quarter {
+    width: 25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000339}}
+  .touch .touch-three-quarters {
+    width: 75%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000345}}
+  .touch .touch-one-fifth {
+    width: 20%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000346}}
+  .touch .touch-two-fifths {
+    width: 40%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000347}}
+  .touch .touch-three-fifths {
+    width: 60%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000348}}
+  .touch .touch-four-fifths {
+    width: 80%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000354}}
+  .touch .touch-one-sixth {
+    width: 16.666%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000358}}
+  .touch .touch-five-sixths {
+    width: 83.333%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000364}}
+  .touch .touch-one-eighth {
+    width: 12.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000366}}
+  .touch .touch-three-eighths {
+    width: 37.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000368}}
+  .touch .touch-five-eighths {
+    width: 62.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000370}}
+  .touch .touch-seven-eighths {
+    width: 87.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000376}}
+  .touch .touch-one-tenth {
+    width: 10%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000378}}
+  .touch .touch-three-tenths {
+    width: 30%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000382}}
+  .touch .touch-seven-tenths {
+    width: 70%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000384}}
+  .touch .touch-nine-tenths {
+    width: 90%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000390}}
+  .touch .touch-one-twelfth {
+    width: 8.333%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000394}}
+  .touch .touch-five-twelfths {
+    width: 41.666%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\0000396}}
+  .touch .touch-seven-twelfths {
+    width: 58.333%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_widths\.scss}line{font-family:\00003100}}
+  .touch .touch-eleven-twelfths {
+    width: 91.666%; }
+
+/* endif */
 /* Fonts */
 /* ==|====================
    Fonts/Oswald
@@ -1265,6 +1517,116 @@ footer {
     -ms-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
+@-webkit-keyframes roll-away {
+  /* line 77, ../scss/modules/_animations.scss */
+  0% {
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    -moz-transform: rotate(0deg) translate(0, 0);
+    -ms-transform: rotate(0deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0); }
+
+  /* line 78, ../scss/modules/_animations.scss */
+  50% {
+    -webkit-transform: translate(100px, 100px);
+    -moz-transform: translate(100px, 100px);
+    -ms-transform: translate(100px, 100px);
+    transform: translate(100px, 100px); }
+
+  /* line 79, ../scss/modules/_animations.scss */
+  100% {
+    -webkit-transform: rotate(360px) translate(200px, 200px);
+    -moz-transform: rotate(360px) translate(200px, 200px);
+    -ms-transform: rotate(360px) translate(200px, 200px);
+    transform: rotate(360px) translate(200px, 200px); } }
+
+@-moz-keyframes roll-away {
+  /* line 77, ../scss/modules/_animations.scss */
+  0% {
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    -moz-transform: rotate(0deg) translate(0, 0);
+    -ms-transform: rotate(0deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0); }
+
+  /* line 78, ../scss/modules/_animations.scss */
+  50% {
+    -webkit-transform: translate(100px, 100px);
+    -moz-transform: translate(100px, 100px);
+    -ms-transform: translate(100px, 100px);
+    transform: translate(100px, 100px); }
+
+  /* line 79, ../scss/modules/_animations.scss */
+  100% {
+    -webkit-transform: rotate(360px) translate(200px, 200px);
+    -moz-transform: rotate(360px) translate(200px, 200px);
+    -ms-transform: rotate(360px) translate(200px, 200px);
+    transform: rotate(360px) translate(200px, 200px); } }
+
+@-ms-keyframes roll-away {
+  /* line 77, ../scss/modules/_animations.scss */
+  0% {
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    -moz-transform: rotate(0deg) translate(0, 0);
+    -ms-transform: rotate(0deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0); }
+
+  /* line 78, ../scss/modules/_animations.scss */
+  50% {
+    -webkit-transform: translate(100px, 100px);
+    -moz-transform: translate(100px, 100px);
+    -ms-transform: translate(100px, 100px);
+    transform: translate(100px, 100px); }
+
+  /* line 79, ../scss/modules/_animations.scss */
+  100% {
+    -webkit-transform: rotate(360px) translate(200px, 200px);
+    -moz-transform: rotate(360px) translate(200px, 200px);
+    -ms-transform: rotate(360px) translate(200px, 200px);
+    transform: rotate(360px) translate(200px, 200px); } }
+
+@-o-keyframes roll-away {
+  /* line 77, ../scss/modules/_animations.scss */
+  0% {
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    -moz-transform: rotate(0deg) translate(0, 0);
+    -ms-transform: rotate(0deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0); }
+
+  /* line 78, ../scss/modules/_animations.scss */
+  50% {
+    -webkit-transform: translate(100px, 100px);
+    -moz-transform: translate(100px, 100px);
+    -ms-transform: translate(100px, 100px);
+    transform: translate(100px, 100px); }
+
+  /* line 79, ../scss/modules/_animations.scss */
+  100% {
+    -webkit-transform: rotate(360px) translate(200px, 200px);
+    -moz-transform: rotate(360px) translate(200px, 200px);
+    -ms-transform: rotate(360px) translate(200px, 200px);
+    transform: rotate(360px) translate(200px, 200px); } }
+
+@keyframes roll-away {
+  /* line 77, ../scss/modules/_animations.scss */
+  0% {
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    -moz-transform: rotate(0deg) translate(0, 0);
+    -ms-transform: rotate(0deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 0); }
+
+  /* line 78, ../scss/modules/_animations.scss */
+  50% {
+    -webkit-transform: translate(100px, 100px);
+    -moz-transform: translate(100px, 100px);
+    -ms-transform: translate(100px, 100px);
+    transform: translate(100px, 100px); }
+
+  /* line 79, ../scss/modules/_animations.scss */
+  100% {
+    -webkit-transform: rotate(360px) translate(200px, 200px);
+    -moz-transform: rotate(360px) translate(200px, 200px);
+    -ms-transform: rotate(360px) translate(200px, 200px);
+    transform: rotate(360px) translate(200px, 200px); } }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_lists\.scss}line{font-family:\000031}}
 .list-plain {
   list-style: none;
@@ -1349,3 +1711,9 @@ footer {
     -moz-animation: rotate infinite linear;
     -ms-animation: rotate infinite linear;
     animation: rotate infinite linear; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000311}}
+  .ball.roll-away {
+    -webkit-animation: roll-away 2s linear;
+    -moz-animation: roll-away 2s linear;
+    -ms-animation: roll-away 2s linear;
+    animation: roll-away 2s linear; }

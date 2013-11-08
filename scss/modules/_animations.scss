@@ -72,3 +72,9 @@
   0% { @include vendor(transform, rotate(0deg)); }
   100% { @include vendor(transform, rotate(360deg)); }
 }
+
+@include keyframe(roll-away) {
+  0% { @include vendor(transform, rotate(0deg) translate(0, 0)); }
+  50% { @include vendor(transform, translate(100px, 100px)); }
+  100% { @include vendor(transform, rotate(360px) translate(200px, 200px)); }
+}

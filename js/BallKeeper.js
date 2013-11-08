@@ -38,7 +38,6 @@
 
     var fillContainer = function(){
       var count = 0;
-      
       $.each(settings.setOfBalls, function( index, value ) {
         if (index === 0){
           settings.currentColor = value.colorType;
@@ -46,25 +45,25 @@
         
         for (var i = 0; i < value.duration; i++){
           var ball = $('<div class="ball rotating" />');
-          $('.balls').append(ball.addClass('delayed-'+ count).css('animation-duration', count + .5 + 's'));
+          $('.balls').append(ball.addClass('delayed-'+ count));
           //html += '<span style="float:left;width:30px;height:30px;background:' + value.colorType + '" data-color-type="' + value.colorType + '">' + value.duration + '</span>';
           count++;
         }
+      });
+      $($('.ball').get().reverse()).each(function(i, val) {
+        $(this).css('animation-duration', (i + 1) + 's');
       });
       //$element.html(html);
     };
 
     this.spitBall = function(ballNumber){
       // ballNumber not used yet, but can come in handy
-      
       //dummy code
-      //var $el = $element.find(':first-child');
+      var $ball = $element.find('.ball');
 
-      $element.find(':first-child').remove();
+      $ball.last().removeClass('rotating').delay(600).appendTo('.rolloff-container');
       
-      var $el = $element.find(':first-child');
-      
-      if (!$el.length){
+      if (!$ball.length){
         //done!
         settings.onContainerEmpty.call(plugin);
         return;

@@ -8,4 +8,7 @@
   &.rotating {
     @include vendor(animation, rotate infinite linear);
   }
+  &.roll-away {
+    @include vendor(animation, roll-away 2s linear);
+  }
 }
