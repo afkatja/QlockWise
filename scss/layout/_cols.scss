@@ -1,6 +1,14 @@
 /* ==|====================
    Layout/Cols
    ======================= */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 
 [class^="l-cols"],
 [class*=" l-cols"] {
