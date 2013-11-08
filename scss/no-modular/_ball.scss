@@ -3,13 +3,9 @@
 }
 .ball {
   width: 80px; height: 80px; background: url(../img/ball.png); background-size: contain; color: #fff; line-height: 80px; text-align: center; @include vendor(border-radius, 80px);
-  //@for $i from 1 through 60 {  
+   
   &:nth-child(8n) { margin-left: 40px; }
-  //}
-  &:last-child {
-    
-  }
   &.rotating {
-    @include vendor(animation, rotate 2s infinite linear);
+    @include vendor(animation, rotate infinite linear);
   }
 }

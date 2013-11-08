@@ -37,18 +37,21 @@
     }; // end init()
 
     var fillContainer = function(){
-    
-      //dummy code, yikes
-      var html = '';
+      var count = 0;
+      
       $.each(settings.setOfBalls, function( index, value ) {
         if (index === 0){
           settings.currentColor = value.colorType;
-        };
+        }
+        
         for (var i = 0; i < value.duration; i++){
-          html += '<span style="float:left;width:30px;height:30px;background:' + value.colorType + '" data-color-type="' + value.colorType + '">' + value.duration + '</span>';
+          var ball = $('<div class="ball rotating" />');
+          $('.balls').append(ball.addClass('delayed-'+ count).css('animation-duration', count + .5 + 's'));
+          //html += '<span style="float:left;width:30px;height:30px;background:' + value.colorType + '" data-color-type="' + value.colorType + '">' + value.duration + '</span>';
+          count++;
         }
       });
-      $element.html(html);
+      //$element.html(html);
     };
 
     this.spitBall = function(ballNumber){

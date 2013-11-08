@@ -45,7 +45,7 @@
         'blue': {src: 'blue.mp4'}
       },
       
-      timeUnit: 3 // in seconds
+      timeUnit: 20 // in seconds
     };
 
     // (internal) settings

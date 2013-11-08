@@ -1247,9 +1247,9 @@ footer {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000037}}
   .ball:nth-child(8n) {
     margin-left: 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000038}}
   .ball.rotating {
-    -webkit-animation: rotate 2s infinite linear;
-    -moz-animation: rotate 2s infinite linear;
-    -ms-animation: rotate 2s infinite linear;
-    animation: rotate 2s infinite linear; }
+    -webkit-animation: rotate infinite linear;
+    -moz-animation: rotate infinite linear;
+    -ms-animation: rotate infinite linear;
+    animation: rotate infinite linear; }
