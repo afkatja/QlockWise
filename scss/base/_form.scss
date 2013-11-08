@@ -28,13 +28,14 @@ textarea {
 .select-wrapper {
   display: block; // Override
   position: relative;
-  height: 36px; 
+  height: 50px; 
   overflow: hidden;
   padding-right: 20px;
-  background-color: #fff;
-  @include vendor(border-radius, 6px);
+  @include vendor(border-radius, 2px);
+  background: transparentize(#B7A835, .5) url(../img/pattern/pattern-noise.png) 0 0 repeat; color: #444; 
+  box-shadow: 0px 3px 5px rgba(#000, .3);
   &:after { content: '';
-    background-color: #fff; width: 10px; @include center-v(7px); right: 10px;
+    width: 10px; @include center-v(7px); right: 10px;
     pointer-events: none; //to make underlying select box drop down on click on the arrow
   }
 }
@@ -43,5 +44,7 @@ select {
   height: 100%; // Override
   padding: 0 10px; // Override; right padding necessary for text-overflow
   -webkit-appearance: textfield;
+  line-height: 50px; color: #444; text-shadow: 0 1px 1px rgba(#fff, .75);
+  background: transparent; border: transparent;
   &:focus { outline: none; }
 }

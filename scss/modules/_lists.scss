@@ -5,18 +5,25 @@
 .list-numbered {
   counter-reset: list;
   & > li {
-    padding-left: 60px;
+    padding: 10px 10px 10px 60px;
     position: relative;
-    line-height: 40px;
+    line-height: 50px;
+    display: block;
+    text-align: left;
+    @extend %contain;
+    background: rgba(#fff, .1);
     &:before {
       counter-increment: list;
       content: counter(list);
       display: inline-block;
-      text-indent: -40px;
+      position: absolute; left: 20px; top: 3px;
+      width: 30px;
       padding-top: inherit;
-      font-family: $novecento-book;
+      font-family: $stencil;
       font-size: 32px;
-      color: #fff;
+      color: #444;
+      text-shadow: 0 1px 1px rgba(#fff, .75);
     }
   }
+  li + li { margin-top: 30px; }
 }

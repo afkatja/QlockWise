@@ -30,6 +30,18 @@
     visibility: hidden;
 }
 
+.text-center { text-align: center; }
+
+.inactive {
+  opacity: .5;
+}
+
+.box {
+  padding: 20px;
+}
+
+
+
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
@@ -79,6 +91,13 @@
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
+.contain, %contain {
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
 
 .clearfix:before,
 .clearfix:after {
