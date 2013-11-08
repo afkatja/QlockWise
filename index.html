@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <title>Start!</title>
 </head>
@@ -14,30 +14,27 @@
     <article class="hbox one-whole">
       <div class="select-wrapper flex-item">
         <select name="task" id="task">
-          <option value="taak-1">Tanden poetsen</option>
-          <option value="taak-2">Opruimen</option>
-          <option value="taak-3">Aankleden</option>
-          <option value="taak-4">Eten</option>
-          <option value="taak-5">Schooltas inpaken</option>
-          <option value="taak-6">TV kijken</option>
-          <option value="taak-7">Spelen</option>
-          <option value="taak-8">Bezig zijn</option>
-          <option value="taak-9">Wachten</option>
-          <option value="taak-10">nog iets...</option>
+          <option value="brushTeeth">Tanden poetsen</option>
+          <option value="clean">Opruimen</option>
+          <option value="dress">Aankleden</option>
+          <option value="eat">Eten</option>
+          <option value="pack">Schooltas inpaken</option>
+          <option value="watchTV">TV kijken</option>
+          <option value="play">Spelen</option>
         </select>
       </div>
       <div class="select-wrapper flex-item">
         <select name="time" id="time">
-          <option value="tijd-1">1 min</option>
-          <option value="tijd-2">2 min</option>
-          <option value="tijd-3">5 min</option>
-          <option value="tijd-4">10 min</option>
-          <option value="tijd-5">15 min</option>
-          <option value="tijd-6">20 min</option>
-          <option value="tijd-7">30 min</option>
-          <option value="tijd-8">45 min</option>
-          <option value="tijd-9">50 min</option>
-          <option value="tijd-10">1 uur</option>
+          <option value="1">1 min</option>
+          <option value="2">2 min</option>
+          <option value="5">5 min</option>
+          <option value="10">10 min</option>
+          <option value="15">15 min</option>
+          <option value="20">20 min</option>
+          <option value="30">30 min</option>
+          <option value="45">45 min</option>
+          <option value="50">50 min</option>
+          <option value="60">1 uur</option>
         </select>
       </div>
       <button type="button" class="btn flex-item" data-role="add-item">Voeg toe</button>
@@ -53,6 +50,11 @@
     <aside class="contain"></aside>
     <footer></footer>
   </div>
-  <script type="text/javascript" src="/js/start.js"></script>
+  <script src="js/vendor/jquery-1.8.0.min.js"></script>
+  <script src="js/QlockWise.js"></script>
+  <script src="js/BallKeeper.js"></script>  
+  <script>
+    qlockWise = $.QlockWise();
+  </script>
 </body>
 </html>

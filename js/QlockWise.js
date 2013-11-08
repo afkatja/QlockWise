@@ -19,6 +19,26 @@
         { title: 'spelen', iconSrc : 'src/sdfsd.png', colorType: 'gold', duration: 1, skippable: 1},
         { title: 'spelen', iconSrc : 'src/sdfsd.png', colorType: 'blue', duration: 2, skippable: 1}
       ],
+      
+      /*
+      Tanden poetsen          blauw
+      Opruimen                   oranje
+      Aankleden                  groen
+      Eten                            roze
+      Schooltas inpakken    paars
+      TV kijken                   rood
+      Spelen                         geel
+      Bezig zijn                   oranje
+      */
+      taskTypes: {
+        'brushTeeth': {title: 'Tanden poetsen', skippable: 0},
+        'clean': {title: 'Opruimen', skippable: 1},
+        'dress': {title: 'Aankleden', skippable: 1},
+        'eat': {title: 'Eten', skippable: 1},
+        'pack': {title: 'Schooltas inpakken', skippable: 1},
+        'watchTV': {title: 'TV kijken', skippable: 1},
+        'play': {title: 'Spelen', skippable: 1}
+      },
       videos: {
         'red': {src: 'red.mp4'},
         'gold': {src: 'gold.mp4'},
@@ -48,7 +68,9 @@
 
       settings = $.extend({}, settings, defaultOptions, options);
       
-      onPlayScreenEntered();
+      //onPlayScreenEntered();
+      
+      setupTaskScreen();
       
     }; // end init()
     
@@ -111,24 +133,49 @@
     
     // for edit screen
     
-    this.clearTaskList = function(){
+    
+    var setupTaskScreen = function(){
       // when task list screen is entered?
       
+      clearTaskList();
+      
+      $("button[data-role='add-item']").on('click touchend',
+        function(){
+          addTask.call(this);
+        }
+      );
     };
     
-    this.createTaskList = function(){
-      // create whole set
-      /*
-        for (){
-          this.createTask(...);
-        }
-      */
+    var addTask = function(e){
+      var selection = $(this).parent().find('select');
+      var output = $('[ data-role="output-items"]').find('output');
+      var selected = [];
+      selection.each(function(){
+        var text = $(this).find(':selected').text();
+        selected.push(text);
+      });
+      if(output.text() == '') {
+        output.text(selected[1] + ' ' + selected[0].toLowerCase());
+      } else {
+        $('[ data-role="output-items"]').append('<li><output>'+ selected[1] + ' ' + selected[0].toLowerCase() +'</output></li>');
+      }
+      
+      settings.taskList.push({
+        type: $(selection[0]).val(), 
+        duration: $(selection[1]).val()
+      });
+      
+      console.log(settings.taskList);
       
     };
     
-    this.createTask = function(){
-    
+    var clearTaskList = function(){
+      // when task list screen is entered?
+      settings.taskList = [];
     };
+    
+    
+
     
     // end for edit screen
     
