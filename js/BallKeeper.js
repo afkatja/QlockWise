@@ -23,7 +23,7 @@
       setOfBalls: [],
       onColorChanged: function () { },
       onContainerEmpty: function () { },
-      currentColor: null
+      currentType: null
     };
   
     //constructor
@@ -38,30 +38,40 @@
 
     var fillContainer = function(){
       var count = 0;
+      settings.setOfBalls = settings.setOfBalls.reverse();
       $.each(settings.setOfBalls, function( index, value ) {
-        console.log(value.type);
+        
         
         for (var i = 0; i < value.duration; i++){
-          var ball = $('<div class="ball rotating" />');
+          var ball = $('<div class="ball rotating" data-type="' + value.type + '"/>');
           $('.balls').append(ball.addClass('delayed-'+ count + ' ' + value.type));
-          //html += '<span style="float:left;width:30px;height:30px;background:' + value.colorType + '" data-color-type="' + value.colorType + '">' + value.duration + '</span>';
           count++;
         }
       });
       $($('.ball').get().reverse()).each(function(i, val) {
         $(this).css('animation-duration', (i + 1) + 's');
       });
+      
+      settings.currentType = settings.setOfBalls[settings.setOfBalls.length - 1].type;
+      //console.log('first' + settings.currentType);
       //$element.html(html);
     };
 
     this.spitBall = function(ballNumber){
+      //return;
       // ballNumber not used yet, but can come in handy
       //dummy code
       var $ball = $element.find('.ball');
-
+      
+      //$ball.last().remove();
+      
+      
       $ball.last().fadeOut(600, function(){
         $(this).removeClass('rotating').appendTo('.rolloff-container');
       });
+      
+      //again
+      var $ball = $element.find('.ball:not(:last)');
       
       if (!$ball.length){
         //done!
@@ -69,8 +79,9 @@
         return;
       }
       
-      if ($ball.data('colorType') != settings.currentColor){
-        settings.currentColor = $ball.data('colorType');
+      
+      if ($ball.last().data('type') != settings.currentType){
+        settings.currentType = $ball.last().data('type');
         settings.onColorChanged.call(plugin);
       }
       

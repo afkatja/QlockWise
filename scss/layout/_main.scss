@@ -12,11 +12,11 @@
 @include sticky-footer(260px, '.wrap', '', 'footer');
 
 .hbox {
-  @include vendor-value(display, flex); @include vendor(flex-flow, row wrap);
+  display: flex; flex-flow: row wrap;
 }
 
 .vbox {
-  @include vendor-value(display, flex); @include vendor(flex-flow, column wrap);
+  display: flex; flex-flow: column wrap;
 }
 
 .flex-item {
