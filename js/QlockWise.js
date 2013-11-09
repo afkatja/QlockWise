@@ -143,7 +143,7 @@
         $('.bg').css('backgroundPosition', '-=30px 100%');
         $('.dock').delay(1000).css('backgroundPosition', '-=10px 100%');
       }
-      $('.bg, .dock').css('background-size', '100% 100%');
+      $('.bg, .dock').css('background-size', 'cover 100%');
     };
     
     // for edit screen

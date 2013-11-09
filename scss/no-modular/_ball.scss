@@ -14,9 +14,9 @@
     @include vendor(animation, roll-away 2s linear);
   }
   
-  &.watchTV { background: url(../img/orangetv.png) no-repeat center center, url(../img/ball.png) no-repeat center center; background-size: 60px, 100%; }
-  &.eat { background: url(http://icons.iconarchive.com/icons/artdesigner/emoticons-2/256/eat-icon.png) no-repeat center center, url(../img/ball.png) no-repeat center center; background-size: 60px, 100%; }
-  &.brushTeeth { background: url(../img/brushtimer.png) no-repeat center center, url(../img/ball.png) no-repeat center center; background-size: 60px, 100%; }
-  &.dress { background: url(../img/get_dressed.png) no-repeat center center, url(../img/ball.png) no-repeat center center; background-size: 60px, 100%; }
-  &.clean {  background: url(http://www.emofaces.com/png/200/buddy-icons/vacuum%20cleaner.png) no-repeat center center, url(../img/ball.png) no-repeat center center; background-size: 60px, 100%; } 
+  &.watchTV { background: url(../img/orangetv.png) no-repeat center center, url(../img/ball-red.png) no-repeat center center; background-size: 60px, 100%; }
+  &.eat { background: url(http://icons.iconarchive.com/icons/artdesigner/emoticons-2/256/eat-icon.png) no-repeat center center, url(../img/ball-yellow.png) no-repeat center center; background-size: 60px, 100%; }
+  &.brushTeeth { background: url(../img/brushtimer.png) no-repeat center center, url(../img/ball-blue.png) no-repeat center center; background-size: 60px, 100%; }
+  &.dress { background: url(../img/get_dressed.png) no-repeat center center, url(../img/ball-green.png) no-repeat center center; background-size: 60px, 100%; }
+  &.clean {  background: url(http://www.emofaces.com/png/200/buddy-icons/vacuum%20cleaner.png) no-repeat center center, url(../img/ball-green.png) no-repeat center center; background-size: 60px, 100%; } 
 }

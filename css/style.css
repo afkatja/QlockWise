@@ -1761,21 +1761,21 @@ body {
     animation: roll-away 2s linear; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000317}}
   .ball.watchTV {
-    background: url(../img/orangetv.png) no-repeat center center, url(../img/ball.png) no-repeat center center;
+    background: url(../img/orangetv.png) no-repeat center center, url(../img/ball-red.png) no-repeat center center;
     background-size: 60px, 100%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000318}}
   .ball.eat {
-    background: url(http://icons.iconarchive.com/icons/artdesigner/emoticons-2/256/eat-icon.png) no-repeat center center, url(../img/ball.png) no-repeat center center;
+    background: url(http://icons.iconarchive.com/icons/artdesigner/emoticons-2/256/eat-icon.png) no-repeat center center, url(../img/ball-yellow.png) no-repeat center center;
     background-size: 60px, 100%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000319}}
   .ball.brushTeeth {
-    background: url(../img/brushtimer.png) no-repeat center center, url(../img/ball.png) no-repeat center center;
+    background: url(../img/brushtimer.png) no-repeat center center, url(../img/ball-blue.png) no-repeat center center;
     background-size: 60px, 100%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000320}}
   .ball.dress {
-    background: url(../img/get_dressed.png) no-repeat center center, url(../img/ball.png) no-repeat center center;
+    background: url(../img/get_dressed.png) no-repeat center center, url(../img/ball-green.png) no-repeat center center;
     background-size: 60px, 100%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000321}}
   .ball.clean {
-    background: url(http://www.emofaces.com/png/200/buddy-icons/vacuum%20cleaner.png) no-repeat center center, url(../img/ball.png) no-repeat center center;
+    background: url(http://www.emofaces.com/png/200/buddy-icons/vacuum%20cleaner.png) no-repeat center center, url(../img/ball-green.png) no-repeat center center;
     background-size: 60px, 100%; }
