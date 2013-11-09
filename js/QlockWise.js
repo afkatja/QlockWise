@@ -110,6 +110,8 @@
     
     var onNewTimeUnitFetched = function(timeUnit){
       objects.ballKeeper.spitBall(timeUnit);
+      var $vid = $('#video').get(0);
+      $vid.play();
     };
     
     

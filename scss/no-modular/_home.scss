@@ -16,7 +16,7 @@ body { background:  url(../img/pattern/wood.png); background-size: cover; }
   output { color: rgb(244, 201, 146); text-shadow: 0 1px 1px rgba(#000, .5); }
 }
 
-#video { position: absolute; bottom: 120px; right: 20px; width: 50%; height: 50%; }
+#video { position: absolute; bottom: 60px; right: 0; width: 640px; height: 480px; }
 
 .bg, .dock { @include vendor(transition, background-position .5s ease-in-out); }
 .dock { height: 260px; background: url('../img/dock.png') no-repeat left bottom; background-size: 100% 100%; }

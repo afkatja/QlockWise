@@ -1736,10 +1736,10 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000319}}
 #video {
   position: absolute;
-  bottom: 120px;
-  right: 20px;
-  width: 50%;
-  height: 50%; }
+  bottom: 60px;
+  right: 0;
+  width: 640px;
+  height: 480px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000321}}
 .bg, .dock {
