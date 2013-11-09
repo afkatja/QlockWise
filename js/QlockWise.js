@@ -15,11 +15,10 @@
     // defaults
     var defaultOptions = {
       taskList: [
-        { title: 'tanden poetsen',  colorType: 'red', type: 'brushTeeth', duration: 2, skippable: 0},
-        { title: 'opruimen', colorType: 'gold', type: 'clean', duration: 1, skippable: 1},
-        { title: 'TV kijken', colorType: 'blue', type: 'watchTV', duration: 2, skippable: 1},
-        { title: 'Aankleden', colorType: 'green', duration: 5, type: 'dress' },
-        { title: 'Eten', colorType: 'orange', duration: 15, type: 'eat' }
+        { type: 'clean', duration: 25},
+        { type: 'brushTeeth', duration: 15},
+        { type: 'pack', duration: 30},
+        { type: 'watchTV', duration: 15}
       ],
       
       /*
@@ -70,7 +69,7 @@
 
       settings = $.extend({}, settings, defaultOptions, options);
       
-      onPlayScreenEntered();
+      //onPlayScreenEntered();
       
       setupTaskScreen();
       
@@ -79,7 +78,8 @@
     
     // when going form start screen to play screen
     var onPlayScreenEntered = function(){
-      
+      $('.page-edit').addClass('hidden');
+      $('.page-play').removeClass('hidden').show(500);
       
       /*objects.filmDirector = $('#video').FilmDirector({
         videos: settings.videos
@@ -145,6 +145,8 @@
     var setupTaskScreen = function(){
       // when task list screen is entered?
       
+      $('.page-edit').removeClass('hidden').show(500);
+      console.log('start screen')
       clearTaskList();
       
       $("button[data-role='add-item']").on('click touchend',
@@ -152,20 +154,67 @@
           addTask.call(this);
         }
       );
+      
+      $("[data-role='remove-btn']").on('click touchend',
+        function(){
+          removeTask.call(this);
+        }
+      );
+      
+      $("[data-role='start-btn']").on('click touchend',
+        function(){
+          onPlayScreenEntered();
+        }
+      );
+     
+    };
+    
+    
+    
+    var removeTask = function(){
+      var item = $(this).parents('li');
+      item.slideUp(300, function(){
+        $('.tasks select').val(0);
+        $(this).remove();
+      });
     };
     
     var addTask = function(e){
       var selection = $(this).parent().find('select');
       var output = $('[ data-role="output-items"]').find('output');
       var selected = [];
+      
+      
+      
+      var falseInput = false;
       selection.each(function(){
         var text = $(this).find(':selected').text();
-        selected.push(text);
+        if($(this).val() == 0) {
+          
+          falseInput = true;
+          //$(this).addClass('inactive');
+          return;
+        } else {
+          selected.push(text);
+        }
       });
+      
+      if (falseInput){
+        //console.log('fsd');
+        return;
+      }
+      
+      $('.tasks li.hidden, [data-role=start-btn]').fadeIn(500).removeClass('hidden');
+      
       if(output.text() == '') {
         output.text(selected[1] + ' ' + selected[0].toLowerCase());
       } else {
-        $('[ data-role="output-items"]').append('<li><output>'+ selected[1] + ' ' + selected[0].toLowerCase() +'</output></li>');
+        $(this).parents('li').before('<li class="contain"><output>'+ selected[1] + ' ' + selected[0].toLowerCase() +'</output><button class="btn secondary pictogram right" data-role="remove-btn">X</button></li>');
+        $('.tasks select').val(0);
+        if($('.tasks li.contain').length == 4) {
+          $(this).fadeOut(300);
+          $('.tasks select').val(0);
+        }
       }
       
       settings.taskList.push({

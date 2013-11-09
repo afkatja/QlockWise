@@ -11,54 +11,82 @@
 </head>
 <body>
   <div class="wrap">
-    <header class="oswald">
-      QlockWise!
-      <h1 class="one-whole">Stel hier het programma samen</h1>
-    </header>
-    <article class="tasks">
-      <ul class="list-plain list-numbered" data-role="output-items">
-        <li class="hidden contain">
-          <output></output>
-          <button class="btn secondary pictogram right" data-role="remove-btn">X</button></li>
-        </li>    
-        <li class=" one-whole">
-          <div class="hbox">          
-            <div class="select-wrapper flex-item">
-              <select name="task" id="task">                
-                <option value="0" selected="selected">Kies iets...</option>
-                <option value="brushTeeth">Tanden poetsen</option>
-                <option value="clean">Opruimen</option>
-                <option value="dress">Aankleden</option>
-                <option value="eat">Eten</option>
-                <option value="pack">Schooltas inpaken</option>
-                <option value="watchTV">TV kijken</option>
-                <option value="play">Spelen</option>
-              </select>
-            </div>
-            <div class="select-wrapper flex-item">
-              <select name="time" id="time">
-                <option value="0" selected="selected">Hoe veel tijd kost het?</option>
-                <option value="1">1 min</option>
-                <option value="2">2 min</option>
-                <option value="5">5 min</option>
-                <option value="10">10 min</option>
-                <option value="15">15 min</option>
-                <option value="20">20 min</option>
-                <option value="30">30 min</option>
-                <option value="45">45 min</option>
-                <option value="50">50 min</option>
-                <option value="60">1 uur</option>
-              </select>
-            </div>
-            <button type="button" class="btn flex-item secondary" data-role="add-item">Voeg toe</button>
-          </div>
-        </li>
-      </ul>
-    </article>
 
-    <div class="contain box"><button type="button" class="btn mega hidden primary right" data-role="start-btn">Start!</button></div>
-    <aside class="contain"></aside>
-    <footer></footer>
+  <!-- edit page -->
+    <div class="page page-edit">
+      <header class="oswald">
+        QlockWise!
+        <h1 class="one-whole">Stel hier het programma samen</h1>
+      </header>
+      <article class="tasks">
+        <ul class="list-plain list-numbered" data-role="output-items">
+          <li class="hidden contain">
+            <output></output>
+            <button class="btn secondary pictogram right" data-role="remove-btn">X</button></li>
+          </li>    
+          <li class=" one-whole">
+            <div class="hbox">          
+              <div class="select-wrapper flex-item">
+                <select name="task" id="task">                
+                  <option value="0" selected="selected">Kies iets...</option>
+                  <option value="brushTeeth">Tanden poetsen</option>
+                  <option value="clean">Opruimen</option>
+                  <option value="dress">Aankleden</option>
+                  <option value="eat">Eten</option>
+                  <option value="pack">Schooltas inpaken</option>
+                  <option value="watchTV">TV kijken</option>
+                  <option value="play">Spelen</option>
+                </select>
+              </div>
+              <div class="select-wrapper flex-item">
+                <select name="time" id="time">
+                  <option value="0" selected="selected">Hoe veel tijd kost het?</option>
+                  <option value="1">1 min</option>
+                  <option value="2">2 min</option>
+                  <option value="5">5 min</option>
+                  <option value="10">10 min</option>
+                  <option value="15">15 min</option>
+                  <option value="20">20 min</option>
+                  <option value="30">30 min</option>
+                  <option value="45">45 min</option>
+                  <option value="50">50 min</option>
+                  <option value="60">1 uur</option>
+                </select>
+              </div>
+              <button type="button" class="btn flex-item secondary" data-role="add-item">Voeg toe</button>
+            </div>
+          </li>
+        </ul>
+      </article>
+
+      <div class="contain box"><button type="button" class="btn mega hidden primary right" data-role="start-btn">Start!</button></div>
+      <aside class="contain"></aside>
+      <footer></footer>
+    </div>
+ <!-- end edit page -->
+ 
+ <!-- play page -->
+    <div class="page page-play hidden">
+      <div class="wrap">
+        <header class="bg"></header>
+        <article class="contain"> 
+          <div id="balls-container" class="balls left"></div> 
+          <div class="rolloff-container left hbox one-half"></div>  
+          <video id="video" preload="auto" loop="loop" muted="muted" volume="0">
+            <source src="videos/test640x480.mp4" type="video/mp4">
+          </video>    
+          <div id="controls" class="right">
+            <button id="btn-play" type="button" class="btn secondary">play</button>
+            <button id="btn-stop" type="button" class="btn secondary">stop</button>
+            <button id="btn-go-to-start" type="button" class="btn secondary">go to start</button>
+          </div>
+        </article>
+        <aside></aside>
+      </div>
+      <footer class="dock"></footer>
+    </div>
+ <!-- end play page -->   
+    
   </div>
   <script src="js/QlockWise.js"></script>
   <script src="js/BallKeeper.js"></script>  
