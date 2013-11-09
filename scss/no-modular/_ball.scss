@@ -1,5 +1,5 @@
 .balls {
-  @include vendor-value(display, box); @include vendor(flex-flow, row wrap); @include vendor(justify-content, center); @include vendor(align-content, flex-end); width: 45%; min-height: 520px;
+  @include vendor-value(display, box); @include vendor(flex-flow, row wrap); @include vendor(box-orient, horizontal); @include vendor(justify-content, center); @include vendor(align-content, flex-end); width: 45%; min-height: 520px;
 }
 
 .rolloff-container {  position: absolute; left: 45%; width: 55%; top: 620px; }
