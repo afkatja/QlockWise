@@ -15,10 +15,8 @@
     // defaults
     var defaultOptions = {
       taskList: [
-        { type: 'clean', duration: 25},
-        { type: 'brushTeeth', duration: 15},
-        { type: 'pack', duration: 30},
-        { type: 'watchTV', duration: 15}
+        { type: 'clean', duration: 2},
+        { type: 'brushTeeth', duration: 3}
       ],
       
       /*
@@ -46,7 +44,7 @@
         'blue': {src: 'blue.mp4'}
       },
       
-      timeUnit: 10 // in seconds
+      timeUnit: 3 // in seconds
     };
 
     // (internal) settings
@@ -107,7 +105,7 @@
       var timeDiff = Math.floor((new Date() - settings.startTimeStamp) / 1000);
       if (timeDiff % settings.timeUnit == 0 && timeDiff != settings.currentTimeUnit){
         settings.currentTimeUnit = timeDiff;
-        console.log(timeDiff + 'new balls');
+        //console.log(timeDiff + 'new balls');
         onNewTimeUnitFetched(settings.currentTimeUnit);
       }
     };
@@ -217,19 +215,21 @@
         output.text(selected[1] + ' ' + selected[0].toLowerCase());
       } else {
         $(this).parents('li').before('<li class="contain"><output>'+ selected[1] + ' ' + selected[0].toLowerCase() +'</output><button class="btn secondary pictogram right" data-role="remove-btn">X</button></li>');
-        $('.tasks select').val(0);
+        //$('.tasks select').val(0);
         if($('.tasks li.contain').length == 4) {
           $(this).fadeOut(300);
           $('.tasks select').val(0);
         }
       }
       
+      
       settings.taskList.push({
         type: $(selection[0]).val(), 
-        duration: $(selection[1]).val()
+        duration: parseInt($(selection[1]).val())
       });
       
-      console.log(settings.taskList);
+      
+      //console.log(settings.taskList);
       
     };
     
