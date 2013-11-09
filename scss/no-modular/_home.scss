@@ -5,12 +5,16 @@
 #home {
 } /* #home */
 
+body { background:  url(../img/pattern/wood.png); background-size: cover; }
+
 .wrap {
-  position: relative;
-  background:  url(../img/pattern/wood.png); background-size: cover;
+  position: relative; background: url('../img/plate-center.png') no-repeat left bottom; background-size: contain;
 }
 
 .tasks {
   font-size: 30px;
   output { color: #444; text-shadow: 0 1px 1px rgba(#fff, .75); }
 }
+
+.dock { height: 260px; background: url('../img/dock.png') no-repeat left bottom; background-size: 100% 100%; }
+.bg {  height: 440px; background: url('../img/bg.png') no-repeat left bottom; background-size: 100% 100%; position: absolute; top: 0; left: 0; z-index: -1; }

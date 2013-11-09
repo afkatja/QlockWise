@@ -5,11 +5,11 @@
 .l-main {
 }
 
-@include sticky-footer(50px, '.wrap', '', 'footer');
-
 .wrap {
   width: 100%; margin: 0 auto; padding: 20px;
 }
+
+@include sticky-footer(260px, '.wrap', '', 'footer');
 
 .hbox {
   display: flex; flex-flow: row wrap;
@@ -24,3 +24,4 @@
   &.btn, &.flex-none { flex: none; }
   & + & { margin-left: 20px; }
 }
+

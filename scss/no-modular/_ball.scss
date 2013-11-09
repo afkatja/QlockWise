@@ -1,8 +1,10 @@
 .balls {
-  display: flex; flex-flow: row wrap; justify-content: center; align-content: flex-end; width: 45%; min-height: 800px;
+  display: flex; flex-flow: row wrap; justify-content: center; align-content: flex-end; width: 45%; min-height: 640px;
 }
+
+.rolloff-container {  position: absolute; left: 45%; width: 55%; top: 620px; }
 .ball {
-  width: 80px; height: 80px; background: url(../img/ball.png); background-size: contain; color: #fff; line-height: 80px; text-align: center; @include vendor(border-radius, 80px);
+  width: 100px; height: 100px; color: #fff; line-height: 100px; text-align: center; @include vendor(border-radius, 100px);
    
   &:nth-child(8n) { margin-left: 40px; }
   &.rotating {
@@ -11,4 +13,10 @@
   &.roll-away {
     @include vendor(animation, roll-away 2s linear);
   }
+  
+  &.watchTV { background: url(../img/orangetv.png) no-repeat center center, url(../img/ball.png) no-repeat center center; background-size: 60px, 100%; }
+  &.eat { background: url(http://icons.iconarchive.com/icons/artdesigner/emoticons-2/256/eat-icon.png) no-repeat center center, url(../img/ball.png) no-repeat center center; background-size: 60px, 100%; }
+  &.brushTeeth { background: url(../img/brushtimer.png) no-repeat center center, url(../img/ball.png) no-repeat center center; background-size: 60px, 100%; }
+  &.dress { background: url(../img/get_dressed.png) no-repeat center center, url(../img/ball.png) no-repeat center center; background-size: 60px, 100%; }
+  &.clean {  background: url(http://www.emofaces.com/png/200/buddy-icons/vacuum%20cleaner.png) no-repeat center center, url(../img/ball.png) no-repeat center center; background-size: 60px, 100%; } 
 }

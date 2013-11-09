@@ -1132,6 +1132,12 @@ header {
 /* ==|====================
    Layout/Main
    ======================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\000038}}
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_mixins\.scss}line{font-family:\00003320}}
 html, body {
   height: 100%;
@@ -1147,19 +1153,13 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  padding-bottom: 50px;
-  margin-bottom: -50px; }
+  padding-bottom: 260px;
+  margin-bottom: -260px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_mixins\.scss}line{font-family:\00003332}}
 footer {
   clear: both;
   position: relative; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000310}}
-.wrap {
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000314}}
 .hbox {
@@ -1667,18 +1667,39 @@ footer {
    ========================= */
 /* #home */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\000038}}
-.wrap {
-  position: relative;
+body {
   background: url(../img/pattern/wood.png);
   background-size: cover; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000310}}
+.wrap {
+  position: relative;
+  background: url("../img/plate-center.png") no-repeat left bottom;
+  background-size: contain; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000314}}
 .tasks {
   font-size: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000316}}
   .tasks output {
     color: #444;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000319}}
+.dock {
+  height: 260px;
+  background: url("../img/dock.png") no-repeat left bottom;
+  background-size: 100% 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000320}}
+.bg {
+  height: 440px;
+  background: url("../img/bg.png") no-repeat left bottom;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000031}}
 .balls {
@@ -1687,33 +1708,58 @@ footer {
   justify-content: center;
   align-content: flex-end;
   width: 45%;
-  min-height: 800px; }
+  min-height: 640px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000034}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000035}}
+.rolloff-container {
+  position: absolute;
+  left: 45%;
+  width: 55%;
+  top: 620px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000036}}
 .ball {
-  width: 80px;
-  height: 80px;
-  background: url(../img/ball.png);
-  background-size: contain;
+  width: 100px;
+  height: 100px;
   color: #fff;
-  line-height: 80px;
+  line-height: 100px;
   text-align: center;
-  -webkit-border-radius: 80px;
-  -moz-border-radius: 80px;
-  -ms-border-radius: 80px;
-  border-radius: 80px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000037}}
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000039}}
   .ball:nth-child(8n) {
     margin-left: 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000310}}
   .ball.rotating {
     -webkit-animation: rotate infinite linear;
     -moz-animation: rotate infinite linear;
     -ms-animation: rotate infinite linear;
     animation: rotate infinite linear; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000313}}
   .ball.roll-away {
     -webkit-animation: roll-away 2s linear;
     -moz-animation: roll-away 2s linear;
     -ms-animation: roll-away 2s linear;
     animation: roll-away 2s linear; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000317}}
+  .ball.watchTV {
+    background: url(../img/orangetv.png) no-repeat center center, url(../img/ball.png) no-repeat center center;
+    background-size: 60px, 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000318}}
+  .ball.eat {
+    background: url(http://icons.iconarchive.com/icons/artdesigner/emoticons-2/256/eat-icon.png) no-repeat center center, url(../img/ball.png) no-repeat center center;
+    background-size: 60px, 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000319}}
+  .ball.brushTeeth {
+    background: url(../img/brushtimer.png) no-repeat center center, url(../img/ball.png) no-repeat center center;
+    background-size: 60px, 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000320}}
+  .ball.dress {
+    background: url(../img/get_dressed.png) no-repeat center center, url(../img/ball.png) no-repeat center center;
+    background-size: 60px, 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\0000321}}
+  .ball.clean {
+    background: url(http://www.emofaces.com/png/200/buddy-icons/vacuum%20cleaner.png) no-repeat center center, url(../img/ball.png) no-repeat center center;
+    background-size: 60px, 100%; }

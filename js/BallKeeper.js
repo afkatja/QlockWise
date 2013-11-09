@@ -42,10 +42,11 @@
         if (index === 0){
           settings.currentColor = value.colorType;
         }
+        console.log(value.type, value.colorType);
         
         for (var i = 0; i < value.duration; i++){
           var ball = $('<div class="ball rotating" />');
-          $('.balls').append(ball.addClass('delayed-'+ count));
+          $('.balls').append(ball.addClass('delayed-'+ count + ' ' + value.type + ' ' + value.colorType));
           //html += '<span style="float:left;width:30px;height:30px;background:' + value.colorType + '" data-color-type="' + value.colorType + '">' + value.duration + '</span>';
           count++;
         }
@@ -61,7 +62,9 @@
       //dummy code
       var $ball = $element.find('.ball');
 
-      $ball.last().removeClass('rotating').delay(600).appendTo('.rolloff-container');
+      $ball.last().fadeOut(600, function(){
+        $(this).removeClass('rotating').appendTo('.rolloff-container');
+      });
       
       if (!$ball.length){
         //done!
@@ -69,8 +72,8 @@
         return;
       }
       
-      if ($el.data('colorType') != settings.currentColor){
-        settings.currentColor = $el.data('colorType');
+      if ($ball.data('colorType') != settings.currentColor){
+        settings.currentColor = $ball.data('colorType');
         settings.onColorChanged.call(plugin);
       }
       

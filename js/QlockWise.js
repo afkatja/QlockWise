@@ -15,9 +15,11 @@
     // defaults
     var defaultOptions = {
       taskList: [
-        { title: 'tanden poetsen', iconSrc : 'src/sdfsd.png', colorType: 'red', duration: 2, skippable: 0},
-        { title: 'spelen', iconSrc : 'src/sdfsd.png', colorType: 'gold', duration: 1, skippable: 1},
-        { title: 'spelen', iconSrc : 'src/sdfsd.png', colorType: 'blue', duration: 2, skippable: 1}
+        { title: 'tanden poetsen',  colorType: 'red', type: 'brushTeeth', duration: 2, skippable: 0},
+        { title: 'opruimen', colorType: 'gold', type: 'clean', duration: 1, skippable: 1},
+        { title: 'TV kijken', colorType: 'blue', type: 'watchTV', duration: 2, skippable: 1},
+        { title: 'Aankleden', colorType: 'green', duration: 5, type: 'dress' },
+        { title: 'Eten', colorType: 'orange', duration: 15, type: 'eat' }
       ],
       
       /*
@@ -129,6 +131,12 @@
       
       console.log('all tasks finished');
     
+    };
+    
+    var parallaxBg = function(){
+      $('.bg').setInterval(function(){
+        
+      });
     };
     
     // for edit screen
