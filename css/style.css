@@ -1182,12 +1182,24 @@ footer {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000314}}
 .hbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000318}}
 .vbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
   flex-flow: column wrap; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000322}}
@@ -1724,9 +1736,9 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000319}}
 #video {
   position: absolute;
-  bottom: 100px;
+  bottom: 120px;
   right: 20px;
-  width: 60%;
+  width: 50%;
   height: 50%; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000321}}
@@ -1772,7 +1784,7 @@ body {
   -ms-align-content: flex-end;
   align-content: flex-end;
   width: 45%;
-  min-height: 640px; }
+  min-height: 520px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000035}}
 .rolloff-container {
@@ -1783,15 +1795,11 @@ body {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000036}}
 .ball {
-  width: 100px;
-  height: 100px;
+  width: 74px;
+  height: 74px;
   color: #fff;
-  line-height: 100px;
-  text-align: center;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  border-radius: 100px; }
+  line-height: 74px;
+  text-align: center; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000039}}
   .ball:nth-child(8n) {
     margin-left: 40px; }

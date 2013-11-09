@@ -63,28 +63,26 @@
  <!-- end edit page -->
  
  <!-- play page -->
-    <div class="page page-play hidden">
-      <div class="wrap">
-        <header class="bg"></header>
-        <article class="contain"> 
-          <div id="balls-container" class="balls left"></div> 
-          <div class="rolloff-container left hbox one-half"></div>  
-          <video id="video" preload="auto" loop="loop" muted="muted" volume="0">
-            <source src="videos/test640x480.mp4" type="video/mp4">
-          </video>    
-          <div id="controls" class="right">
-            <button id="btn-play" type="button" class="btn secondary">play</button>
-            <button id="btn-stop" type="button" class="btn secondary">stop</button>
-            <button id="btn-go-to-start" type="button" class="btn secondary">go to start</button>
-          </div>
-        </article>
-        <aside></aside>
+  <div class="page page-play hidden">
+    <header class="bg"></header>
+    <article class="contain"> 
+      <div id="balls-container" class="balls left"></div> 
+      <div class="rolloff-container left hbox one-half"></div>  
+      <video id="video" preload="auto" loop="loop" muted="muted" volume="0" class="z6">
+        <source src="videos/test640x480.mp4" type="video/mp4">
+      </video>    
+      <div id="controls" class="right">
+        <button id="btn-play" type="button" class="btn secondary">play</button>
+        <button id="btn-stop" type="button" class="btn secondary">stop</button>
+        <button id="btn-go-to-start" type="button" class="btn secondary">go to start</button>
       </div>
-      <footer class="dock"></footer>
-    </div>
- <!-- end play page -->   
-    
+    </article>
+    <aside></aside>
   </div>
+  <!-- end play page -->  
+  </div>
+  <footer class="dock"></footer>
+
   <script src="js/QlockWise.js"></script>
   <script src="js/BallKeeper.js"></script>  
   <script>
