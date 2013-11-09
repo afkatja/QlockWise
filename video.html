@@ -73,43 +73,42 @@
   <footer class="dock"></footer>
   
  <script src="js/vendor/jquery-1.8.0.min.js"></script>
+ <script src="js/mousedirection.js"></script>
  <script src="js/QlockWise.js"></script>
  <script src="js/BallKeeper.js"></script>  
  <script>
- 
- qlockWise = $.QlockWise();
-
-
-//prototype shite 
-function stopScrolling( touchEvent ) { touchEvent.preventDefault(); }
-document.addEventListener( 'touchstart' , stopScrolling , false );
-document.addEventListener( 'touchmove' , stopScrolling , false );
-
-function setupVideo(){
-  var $vid = $('#video').get(0);
-  $('#btn-play').on('click touchend',
-    function(){
-      $vid.play();
-      //alert($vid[0].attr('muted'));
-    }
-  );
-  $('#btn-stop').on('click touchend',
-    function(){
-      $vid.pause();
-    }
-  );
-  $('#btn-go-to-start').on('click touchend',
-    function(){
-      console.log(($vid).totalTime);
-      ($vid).currentTime = 0;
+   qlockWise = $.QlockWise();
+  
+  //prototype shite 
+  function stopScrolling( touchEvent ) { touchEvent.preventDefault(); }
+  document.addEventListener( 'touchstart' , stopScrolling , false );
+  document.addEventListener( 'touchmove' , stopScrolling , false );
+  
+  function setupVideo(){
+    var $vid = $('#video').get(0);
+    $('#btn-play').on('click touchend',
+      function(){
+        $vid.play();
+        //alert($vid[0].attr('muted'));
+      }
+    );
+    $('#btn-stop').on('click touchend',
+      function(){
+        $vid.pause();
+      }
+    );
+    $('#btn-go-to-start').on('click touchend',
+      function(){
+        console.log(($vid).totalTime);
+        ($vid).currentTime = 0;
+        
+        ($vid).pause();
+      }
+    );
       
-      ($vid).pause();
-    }
-  );
-    
-}
- 
-setupVideo();
+  }
+   
+  setupVideo();
  
  //end prototype shite
   

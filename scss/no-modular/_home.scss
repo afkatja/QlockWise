@@ -16,5 +16,8 @@ body { background:  url(../img/pattern/wood.png); background-size: cover; }
   output { color: #444; text-shadow: 0 1px 1px rgba(#fff, .75); }
 }
 
+#video { position: absolute; bottom: 100px; right: 20px; width: 60%; height: 50%; }
+
+.bg, .dock { @include vendor(transition, background-position .5s ease-in-out); }
 .dock { height: 260px; background: url('../img/dock.png') no-repeat left bottom; background-size: 100% 100%; }
-.bg {  height: 440px; background: url('../img/bg.png') no-repeat left bottom; background-size: 100% 100%; position: absolute; top: 0; left: 0; z-index: -1; }
+.bg {  height: 440px; width: 100%; background: url('../img/bg.png') no-repeat left bottom; background-size: 100% 100%; position: absolute; top: 0; left: 0; z-index: -1; }
