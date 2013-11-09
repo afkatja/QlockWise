@@ -1686,14 +1686,30 @@ body {
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000319}}
+#video {
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+  width: 60%;
+  height: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000321}}
+.bg, .dock {
+  -webkit-transition: background-position 0.5s ease-in-out;
+  -moz-transition: background-position 0.5s ease-in-out;
+  -ms-transition: background-position 0.5s ease-in-out;
+  transition: background-position 0.5s ease-in-out; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000322}}
 .dock {
   height: 260px;
   background: url("../img/dock.png") no-repeat left bottom;
   background-size: 100% 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000323}}
 .bg {
   height: 440px;
+  width: 100%;
   background: url("../img/bg.png") no-repeat left bottom;
   background-size: 100% 100%;
   position: absolute;
