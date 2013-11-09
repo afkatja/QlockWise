@@ -1,5 +1,5 @@
 .list-plain {
-  list-style: none; padding: 0;
+  list-style: none; padding: 0; margin: 0;
 }
 
 .list-numbered {
@@ -11,7 +11,7 @@
     display: block;
     text-align: left;
     @extend %contain;
-    background: rgba(#fff, .1);
+    background: rgba(#fff, .3);
     &:before {
       counter-increment: list;
       content: counter(list);
@@ -21,8 +21,8 @@
       padding-top: inherit;
       font-family: $stencil;
       font-size: 32px;
-      color: #444;
-      text-shadow: 0 1px 1px rgba(#fff, .75);
+      color: rgb(244, 201, 146);
+      text-shadow: 0 1px 1px rgba(#000, .5);
     }
   }
   li + li { margin-top: 30px; }

@@ -55,10 +55,18 @@
 .box {
   padding: 20px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\0000343}}
+.rel {
+  position: relative; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\0000345}}
+.z6 {
+  z-index: 6; }
+
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\0000351}}
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -73,7 +81,7 @@
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\0000368}}
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -86,7 +94,7 @@
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\0000381}}
 .invisible {
   visibility: hidden; }
 
@@ -101,13 +109,13 @@
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\0000397}}
 .contain:after, .list-numbered > li:after {
   content: "";
   display: block;
   clear: both; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003105}}
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -115,7 +123,7 @@
   display: table;
   /* 2 */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003110}}
 .clearfix:after {
   clear: both; }
 
@@ -123,13 +131,13 @@
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003119}}
 .clearfix {
   *zoom: 1; }
 
 /* =Layout
 ------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003127}}
 .ul-list-inline {
   list-style: none;
   margin: 0;
@@ -146,40 +154,100 @@
 /* =Fonts
 ------------------- */
 /* Chart Colors */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003133}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003135}}
 .f-color1 {
   color: #df2e30; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003138}}
 .f-color2 {
   color: #1894c4; }
 
 /* =Wordpress alignment
 -------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003146}}
 .alignleft {
   display: inline;
   float: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003150}}
 .alignright {
   display: inline;
   float: right; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003154}}
 .aligncenter {
   clear: both;
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003160}}
 .txtleft {
   text-align: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/tools\/_helpers\.scss}line{font-family:\00003163}}
 .txtright {
   text-align: right; }
+
+/* Fonts */
+/* ==|====================
+   Fonts/Oswald
+   ======================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_oswald\.scss}line{font-family:\000038}}
+.oswald {
+  font-family: "Oswald", sans-serif; }
+
+/* ==|=================
+   Fonts/Novecento
+   ====================*/
+@font-face {
+  font-family: 'novecento_book';
+  src: url("../fonts/novecento/novecentowide-book-webfont.eot");
+  src: url("../fonts/novecento/novecentowide-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento/novecentowide-book-webfont.woff") format("woff"), url("../fonts/novecento/novecentowide-book-webfont.ttf") format("truetype"), url("../fonts/novecento/novecentowide-book-webfont.svg#novecento_widebook") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'novecento_widemedium';
+  src: url("../fonts/novecento/novecentowide-medium-webfont.eot");
+  src: url("../fonts/novecento/novecentowide-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento/novecentowide-medium-webfont.woff") format("woff"), url("../fonts/novecento/novecentowide-medium-webfont.ttf") format("truetype"), url("../fonts/novecento/novecentowide-medium-webfont.svg#novecento_widemedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_novecento\.scss}line{font-family:\0000332}}
+.f-book {
+  font-family: "novecento_book" !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_novecento\.scss}line{font-family:\0000335}}
+.f-medium {
+  font-family: "novecento_medium" !important; }
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on April 22, 2013 07:38:44 AM America/New_York */
+@font-face {
+  font-family: 'ModernPictogramsNormal';
+  src: url("../fonts/Modernpics/modernpics-webfont.eot");
+  src: url("../fonts/Modernpics/modernpics-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Modernpics/modernpics-webfont.woff") format("woff"), url("../fonts/Modernpics/modernpics-webfont.ttf") format("truetype"), url("../fonts/Modernpics/modernpics-webfont.svg#ModernPictogramsNormal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_pictograms\.scss}line{font-family:\0000316}}
+.pictogram {
+  font-family: "ModernPictogramsNormal", sans-serif !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_pictograms\.scss}line{font-family:\0000319}}
+[class^="pictogram-"]:before,
+[class*=" pictogram-"]:before {
+  text-indent: 0;
+  font-family: "ModernPictogramsNormal", sans-serif;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_pictograms\.scss}line{font-family:\0000328}}
+.pictogram-close:before {
+  content: 'X'; }
 
 /* Base */
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
@@ -615,6 +683,13 @@ hr {
   padding: 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\0000350}}
+h1 {
+  font-family: "Stardos Stencil", sans-serif;
+  font-size: 3.5em;
+  text-align: left;
+  margin-bottom: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_base\.scss}line{font-family:\0000354}}
 output {
   display: block;
   text-align: left;
@@ -680,7 +755,9 @@ textarea {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/base\/_form\.scss}line{font-family:\0000337}}
   .select-wrapper:after {
-    content: '';
+    content: '/';
+    font-family: "ModernPictogramsNormal", sans-serif;
+    line-height: 7px;
     width: 10px;
     position: absolute;
     top: 50%;
@@ -954,71 +1031,6 @@ select {
     width: 91.666%; }
 
 /* endif */
-/* Fonts */
-/* ==|====================
-   Fonts/Oswald
-   ======================= */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_oswald\.scss}line{font-family:\000038}}
-.oswald {
-  font-family: "Oswald", sans-serif; }
-
-/* ==|=================
-   Fonts/Novecento
-   ====================*/
-@font-face {
-  font-family: 'novecento_book';
-  src: url("../fonts/novecento/novecentowide-book-webfont.eot");
-  src: url("../fonts/novecento/novecentowide-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento/novecentowide-book-webfont.woff") format("woff"), url("../fonts/novecento/novecentowide-book-webfont.ttf") format("truetype"), url("../fonts/novecento/novecentowide-book-webfont.svg#novecento_widebook") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'novecento_widemedium';
-  src: url("../fonts/novecento/novecentowide-medium-webfont.eot");
-  src: url("../fonts/novecento/novecentowide-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/novecento/novecentowide-medium-webfont.woff") format("woff"), url("../fonts/novecento/novecentowide-medium-webfont.ttf") format("truetype"), url("../fonts/novecento/novecentowide-medium-webfont.svg#novecento_widemedium") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_novecento\.scss}line{font-family:\0000332}}
-.f-book {
-  font-family: "novecento_book" !important; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_novecento\.scss}line{font-family:\0000335}}
-.f-medium {
-  font-family: "novecento_medium" !important; }
-
-/* Generated by Font Squirrel (http://www.fontsquirrel.com) on April 22, 2013 07:38:44 AM America/New_York */
-@font-face {
-  font-family: 'ModernPictogramsNormal';
-  src: url("../fonts/Modernpics/modernpics-webfont.eot");
-  src: url("../fonts/Modernpics/modernpics-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Modernpics/modernpics-webfont.woff") format("woff"), url("../fonts/Modernpics/modernpics-webfont.ttf") format("truetype"), url("../fonts/Modernpics/modernpics-webfont.svg#ModernPictogramsNormal") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_pictograms\.scss}line{font-family:\0000316}}
-.pictogram {
-  font-family: "ModernPictogramsNormal", sans-serif !important; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_pictograms\.scss}line{font-family:\0000319}}
-[class^="pictogram-"]:before,
-[class*=" pictogram-"]:before {
-  text-indent: 0;
-  font-family: "ModernPictogramsNormal", sans-serif;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: 0.2em;
-  text-align: center; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_pictograms\.scss}line{font-family:\0000328}}
-.pictogram-close:before {
-  content: 'X'; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/fonts\/_typography\.scss}line{font-family:\000031}}
-h1 {
-  font-family: "Stardos Stencil", sans-serif;
-  font-size: 4em; }
-
 /* Layout */
 /* ==|====================
    Layout/Header
@@ -1030,6 +1042,12 @@ header {
   color: #f4c992;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   font-family: "Stardos Stencil", sans-serif; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_header\.scss}line{font-family:\000039}}
+  header.logo {
+    background: url(../img/logo.png) no-repeat right top;
+    background-size: auto 100px;
+    padding-right: 90px;
+    padding-bottom: 0; }
 
 /* ==|====================
    Layout/Footer
@@ -1186,9 +1204,15 @@ footer {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000322}}
 .flex-item {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
   flex: 1; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000324}}
   .flex-item.btn, .flex-item.btn-color1, .flex-item.btn-color2, .flex-item.flex-none {
+    -webkit-flex: none;
+    -moz-flex: none;
+    -ms-flex: none;
     flex: none; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000325}}
   .flex-item + .flex-item {
@@ -1196,7 +1220,19 @@ footer {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000328}}
 .page {
-  position: absolute; }
+  position: absolute;
+  right: 20px;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  -webkit-animation: fadeInDown 1s;
+  -moz-animation: fadeInDown 1s;
+  -ms-animation: fadeInDown 1s;
+  animation: fadeInDown 1s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000330}}
+  .page.page-play {
+    left: 0;
+    right: 0; }
 
 /* Modules */
 /* ==|====================
@@ -1385,17 +1421,9 @@ footer {
     .icon-search {
       background-position: 0 0; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000362}}
-.select-wrapper:after {
-  background-image: url('/img/icons-se5dc5058ba.png');
-  background-position: 0 -153px;
-  height: 7px;
-  width: 13px; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_icons\.scss}line{font-family:\0000362}}
-    .select-wrapper:after {
-      background-position: 0 -153px; } }
-
+/*.select-wrapper:after {
+  @include sprite-background(select-dropdown);
+}*/
 /* ==|================
    Module/Keyframes
    =================== */
@@ -1646,7 +1674,8 @@ footer {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_lists\.scss}line{font-family:\000031}}
 .list-plain {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_lists\.scss}line{font-family:\000035}}
 .list-numbered {
@@ -1658,7 +1687,7 @@ footer {
     line-height: 50px;
     display: block;
     text-align: left;
-    background: rgba(255, 255, 255, 0.1); }
+    background: rgba(255, 255, 255, 0.3); }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_lists\.scss}line{font-family:\0000315}}
     .list-numbered > li:before {
       counter-increment: list;
@@ -1671,8 +1700,8 @@ footer {
       padding-top: inherit;
       font-family: "Stardos Stencil", sans-serif;
       font-size: 32px;
-      color: #444;
-      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); }
+      color: #f4c992;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/modules\/_lists\.scss}line{font-family:\0000328}}
   .list-numbered li + li {
     margin-top: 30px; }
@@ -1699,8 +1728,8 @@ body {
   z-index: 5; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000313}}
   .tasks output {
-    color: #444;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); }
+    color: #f4c992;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_home\.scss}line{font-family:\0000316}}
 #video {
@@ -1736,9 +1765,21 @@ body {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000031}}
 .balls {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+  -webkit-align-content: flex-end;
+  -moz-align-content: flex-end;
+  -ms-align-content: flex-end;
   align-content: flex-end;
   width: 45%;
   min-height: 640px; }

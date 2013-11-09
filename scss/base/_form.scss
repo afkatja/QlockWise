@@ -34,7 +34,7 @@ textarea {
   @include vendor(border-radius, 2px);
   background: transparentize(#B7A835, .5) url(../img/pattern/pattern-noise.png) 0 0 repeat; color: #444; 
   box-shadow: 0px 3px 5px rgba(#000, .3);
-  &:after { content: '';
+  &:after { content: '/'; font-family: $iconic; line-height: 7px;
     width: 10px; @include center-v(7px); right: 10px;
     pointer-events: none; //to make underlying select box drop down on click on the arrow
   }

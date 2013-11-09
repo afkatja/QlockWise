@@ -59,9 +59,9 @@ $sprites2x: sprite-map("icons-2x/*.png");
   @include sprite-background(search);
 }
 
-.select-wrapper:after {
+/*.select-wrapper:after {
   @include sprite-background(select-dropdown);
-}
+}*/
 
 
 

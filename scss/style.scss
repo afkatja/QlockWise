@@ -20,17 +20,16 @@
 @import "tools/site-settings";
 @import "tools/helpers";
 
+/* Fonts */
+@import "fonts/oswald";
+@import "fonts/novecento";
+@import "fonts/pictograms";
+
 /* Base */
 @import "base/normalize";
 @import "base/base";
 @import "base/form";
 @import "base/widths";
-
-/* Fonts */
-@import "fonts/oswald";
-@import "fonts/novecento";
-@import "fonts/pictograms";
-@import "fonts/typography";
 
 /* Layout */
 @import "layout/header";

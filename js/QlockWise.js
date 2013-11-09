@@ -166,7 +166,8 @@
       
       $("[data-role='remove-btn']").on('click touchend',
         function(){
-          removeTask.call(this);
+          var me = this;
+          setTimeout(function() { removeTask.call(me); }, 500);
         }
       );
       
@@ -181,7 +182,6 @@
     
     
     var removeTask = function(){
-    console.log(this);
       var item = $(this).parents('li');
       item.slideUp(300, function(){
         $('.tasks select').val(0);
@@ -216,6 +216,7 @@
       
       if(output.text() == '' && output.length) {
         output.text(selected[1] + ' ' + selected[0].toLowerCase());
+        $('.tasks select').val(0);
       } else {
         $(this).parents('li').before('<li class="contain"><output>'+ selected[1] + ' ' + selected[0].toLowerCase() +'</output><button class="btn secondary pictogram right" data-role="remove-btn">X</button></li>');
         $('.tasks select').val(0);

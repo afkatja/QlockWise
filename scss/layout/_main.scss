@@ -20,12 +20,13 @@
 }
 
 .flex-item {
-  flex: 1;
-  &.btn, &.flex-none { flex: none; }
+  @include vendor(flex, 1);
+  &.btn, &.flex-none { @include vendor(flex, none); }
   & + & { margin-left: 20px; }
 }
 
 .page {
-  position: absolute;
+  position: absolute; right: 20px; left: 20px; top: 0; bottom: 0; @include vendor(animation, fadeInDown 1s);
+  &.page-play { left: 0; right: 0; }
 }
 
