@@ -2,9 +2,6 @@
    No Modular/Home
    ========================= */
 
-#home {
-} /* #home */
-
 body { background:  url(../img/pattern/wood.png); background-size: cover; }
 
 .wrap {
@@ -12,7 +9,7 @@ body { background:  url(../img/pattern/wood.png); background-size: cover; }
 }
 
 .tasks {
-  font-size: 30px;
+  font-size: 30px; position: relative; z-index: 5;
   output { color: #444; text-shadow: 0 1px 1px rgba(#fff, .75); }
 }
 

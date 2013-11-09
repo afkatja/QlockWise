@@ -25,9 +25,9 @@
     &.mega { font-size: 2em; }
     &.primary, &.secondary {
       border: none; box-shadow: 0px 3px 5px rgba(#000, .3);
-      color: #444;
+      color: rgb(244, 201, 146); text-shadow: 0 1px 1px rgba(#000, .5); 
     }
-    &.primary { background: url(../img/pattern/btn-bg.png); background-size: contain; color: #efefef; text-shadow: 0 1px 1px rgba(#000, .5); }
+    &.primary { background: url(../img/pattern/btn-bg.png); background-size: contain; }
     &.secondary { background: transparentize(#B7A835, .5) url(../img/pattern/pattern-noise.png) 0 0 repeat; }
 }
 

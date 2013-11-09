@@ -44,7 +44,7 @@ select {
   height: 100%; // Override
   padding: 0 10px; // Override; right padding necessary for text-overflow
   -webkit-appearance: textfield;
-  line-height: 50px; color: #444; text-shadow: 0 1px 1px rgba(#fff, .75);
+  line-height: 50px; color: rgb(244, 201, 146); text-shadow: 0 1px 1px rgba(#000, .5);
   background: transparent; border: transparent;
   &:focus { outline: none; }
 }

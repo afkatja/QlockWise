@@ -74,6 +74,9 @@
       setupTaskScreen();
       $.mousedirection();
       $('body').on('mousedirection', parallaxBg);
+      $('body').on('click touchend', function(){
+        $(this).off('mousedirection');
+      });
     }; // end init()
     
     
@@ -152,8 +155,7 @@
     var setupTaskScreen = function(){
       // when task list screen is entered?
       
-      $('.page-edit').removeClass('hidden').show(500);
-      console.log('start screen')
+      $('.page-edit').removeClass('hidden').fadeIn(500);
       clearTaskList();
       
       $("button[data-role='add-item']").on('click touchend',
@@ -179,6 +181,7 @@
     
     
     var removeTask = function(){
+    console.log(this);
       var item = $(this).parents('li');
       item.slideUp(300, function(){
         $('.tasks select').val(0);
@@ -190,8 +193,6 @@
       var selection = $(this).parent().find('select');
       var output = $('[ data-role="output-items"]').find('output');
       var selected = [];
-      
-      
       
       var falseInput = false;
       selection.each(function(){
@@ -213,7 +214,7 @@
       
       $('.tasks li.hidden, [data-role=start-btn]').fadeIn(500).removeClass('hidden');
       
-      if(output.text() == '') {
+      if(output.text() == '' && output.length) {
         output.text(selected[1] + ' ' + selected[0].toLowerCase());
       } else {
         $(this).parents('li').before('<li class="contain"><output>'+ selected[1] + ' ' + selected[0].toLowerCase() +'</output><button class="btn secondary pictogram right" data-role="remove-btn">X</button></li>');

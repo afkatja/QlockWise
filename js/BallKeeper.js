@@ -39,14 +39,11 @@
     var fillContainer = function(){
       var count = 0;
       $.each(settings.setOfBalls, function( index, value ) {
-        if (index === 0){
-          settings.currentColor = value.colorType;
-        }
-        console.log(value.type, value.colorType);
+        console.log(value.type);
         
         for (var i = 0; i < value.duration; i++){
           var ball = $('<div class="ball rotating" />');
-          $('.balls').append(ball.addClass('delayed-'+ count + ' ' + value.type + ' ' + value.colorType));
+          $('.balls').append(ball.addClass('delayed-'+ count + ' ' + value.type));
           //html += '<span style="float:left;width:30px;height:30px;background:' + value.colorType + '" data-color-type="' + value.colorType + '">' + value.duration + '</span>';
           count++;
         }
