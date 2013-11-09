@@ -1182,10 +1182,10 @@ footer {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/layout\/_main\.scss}line{font-family:\0000314}}
 .hbox {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
   -webkit-flex-flow: row wrap;
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
@@ -1767,10 +1767,10 @@ body {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/katjahollaar\/Projects\/QlockWise\/scss\/no-modular\/_ball\.scss}line{font-family:\000031}}
 .balls {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
   -webkit-flex-flow: row wrap;
   -moz-flex-flow: row wrap;
   -ms-flex-flow: row wrap;

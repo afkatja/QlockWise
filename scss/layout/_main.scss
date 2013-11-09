@@ -12,7 +12,7 @@
 @include sticky-footer(260px, '.wrap', '', 'footer');
 
 .hbox {
-  @include vendor-value(display, flex); @include vendor(flex-flow, row wrap);
+  @include vendor-value(display, box); @include vendor(flex-flow, row wrap);
 }
 
 .vbox {
