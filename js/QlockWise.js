@@ -70,11 +70,6 @@
       //onPlayScreenEntered();
       
       setupTaskScreen();
-      $.mousedirection();
-      $('body').on('mousedirection', parallaxBg);
-      $('body').on('click touchend', function(){
-        $(this).off('mousedirection');
-      });
     }; // end init()
     
     
@@ -214,7 +209,7 @@
       
       if(output.text() == '' && output.length) {
         output.text(selected[1] + ' ' + selected[0].toLowerCase());
-        $('.tasks select').val(0);
+        //$('.tasks select').val(0);
       } else {
         $(this).parents('li').before('<li class="contain"><output>'+ selected[1] + ' ' + selected[0].toLowerCase() +'</output><button class="btn secondary pictogram right" data-role="remove-btn">X</button></li>');
         //$('.tasks select').val(0);
@@ -231,7 +226,7 @@
       });
       
       
-      //console.log(settings.taskList);
+      console.log(settings.taskList);
       
     };
     
